@@ -1,0 +1,152 @@
+{% load static %}
+<section class="info_section layout_padding2-top">
+    <div class="container">
+      <div class="info_form">
+        <h4>
+        خبرنامه ما
+        </h4>
+        <form action="">
+          <input type="text" placeholder="ایمیل خود را وارد کنید">
+          <div class="d-flex justify-content-end">
+            <button>
+              عضویت
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h6>
+            درباره انرجیم
+          </h6>
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی مصت و سه درصد گذشته، حال و آیند
+          </p>
+        </div>
+        <div class="col-md-2 offset-md-1">
+          <h6>
+            منوی سایت
+          </h6>
+          <ul>
+            <li class=" active">
+              <a class="" href="index.html">خانه <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="">
+              <a class="" href="about.html">درباره  </a>
+            </li>
+            <li class="">
+              <a class="" href="service.html">سرویس ها </a>
+            </li>
+            <li class="">
+              <a class="" href="#contactSection">تماس با ما</a>
+            </li>
+            <li class="">
+              <a class="" href="#">ورود</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>
+           لینک های مفید
+          </h6>
+          <ul>
+            <li>
+              <a href="">
+                برای نمایش
+              </a>
+            </li>
+            <li>
+              <a href="">
+                برای نمایش
+              </a>
+            </li>
+            <li>
+              <a href="">
+                برای نمایش
+              </a>
+            </li>
+            <li>
+              <a href="">
+                برای نمایش
+              </a>
+            </li>
+            <li>
+              <a href="">
+                برای نمایش
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h6>
+         تماس با ما
+          </h6>
+          <div class="info_link-box">
+            <a href="">
+              <img src="{% static 'images/location-white.png' %}" alt="">
+              <span>{{info.location}}</span>
+            </a>
+            <a href="">
+              <img src="{% static 'images/call-white.png' %}" alt="">
+              <span>{{info.phone}}</span>
+            </a>
+            <a href="">
+              <img src="{% static 'images/mail-white.png' %}" alt="">
+              <span>{{info.email}}</span>
+            </a>
+          </div>
+          <div class="info_social">
+            <div>
+              <a href="">
+                <img src="{% static 'images/facebook-logo-button.png '%}" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="{% static 'images/twitter-logo-button.png'  %}" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="{% static 'images/linkedin.png' %}" alt="">
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <img src="{% static 'images/instagram.png'  %}" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section ">
+    <p>
+      &copy; کد نویسی توسط
+      <a href="https://html.design/">سینا حیدری نژاد</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js'  %}"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width");
+      document
+        .querySelector(".custom_menu-btn")
+        .classList.toggle("menu_btn-style");
+    }
+  </script>
+</body>
+
+</html>
